@@ -24,3 +24,8 @@ group :jekyll_plugins do
 end
 
 gem 'github-pages'
+gem 'redcarpet'
+
+# Plugins
+gem 'jekyll-archives'
+gem 'jekyll-tagging'
