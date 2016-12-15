@@ -2,24 +2,37 @@
 layout: default
 ---
 
-<div class="home">
+<main class="content" role="main">
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
+  <header class="blog-header">
+    <h1 class="blog-title">{{ site.title }}</h1>
+    <h2 class="blog-description">{{ site.description }}</h2>
+  </header>
 
-  <ul class="post-list">
+  <div class="cf frame">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
+      {% if forloop.first == true %}
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <div class="article-item">
+          <header class="post-header">
+            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+          </header>
+          <section class="post-excerpt" itemprop="description">
+            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          </section>
+          <div class="post-meta">
+            <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+          </div>
+        </div>
+      </article>
+      {% endif %}
     {% endfor %}
-  </ul>
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <nav class="pagination" role="navigation">
+    <a class="page-link" href="{{ site.baseurl }}/blog/index.html">more &rarr;</a>
+  </nav>
 
-</div>
+</main>
+
+{% include footer.html %}

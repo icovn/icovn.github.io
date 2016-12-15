@@ -1,41 +1,39 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Icovn's blogs
+title: Icovn's blog
 email: quanghuy.ico@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I love coding, pop music, badminton & tennis
-  My blog destination follows "Idea worth spreading"
+  In the spirit of "Idea worth spreading"
+logo: "/assets/images/logo.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+paginate:	5 # The number of posts to show per page on your homepage
+paginate_path: "/blog/page:num/"
+google_analytics: UA-53825430-2
+
+# Profile
+name: 'Nguyễn Quang Huy'
+bio: >
+  A software developer, born in Bac Ninh, graduated from Hanoi National University, live in Ha Noi.
+author_image: "/assets/images/author.jpg"
 twitter_username: ico_vn
 github_username:  icovn
-google_analytics: UA-53825430-2
 
 # Build settings
 markdown: kramdown
 kramdown:
   input: GFM
 #  parse_block_html: true
+
 #markdown: redcarpet
 #redcarpet:
 #  extensions: ["tables", "fenced_code_blocks"]
+
 theme: minima
+
 gems:
   - jekyll-archives
   - jekyll-feed
+  - jekyll-paginate
   - jekyll-sitemap
   - jemoji
 exclude:
