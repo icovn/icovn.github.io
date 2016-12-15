@@ -29,4 +29,4 @@ gem 'redcarpet'
 # Plugins
 gem 'jekyll-archives'
 gem 'jekyll-paginate'
-#gem 'jekyll-tagging'
+gem 'jekyll-tagging'

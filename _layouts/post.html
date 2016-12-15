@@ -18,6 +18,16 @@ layout: default
           {% include icon-twitter.html %}
         </a>
       </section>
+
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=1648856605387429";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <div class="fb-comments" data-href="http://icovn.github.com" data-numposts="5"></div>
     </footer>
     <div class="bottom-teaser cf">
       <div class="isLeft">
@@ -45,10 +55,9 @@ layout: default
         </section>
       </div>
       {{post}}
+
       <div class="isRight">
-        <h5 class="index-headline featured"><span>Supported by</span></h5>
         <footer class="site-footer">
-          <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a> and <a href="https://github.com/ageitgey/amplify">Amplify</a></section>
           <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
           <div class="inner">
             <section class="copyright">All content copyright <a href="mailto:{{ site.email}}">{{site.name}}</a> &copy; {{ site.time | date: '%Y' }}<br>All rights reserved.</section>
