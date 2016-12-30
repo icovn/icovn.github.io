@@ -1,13 +1,29 @@
+# Google Webmaster Academy
+https://support.google.com/webmasters/answer/6001102?hl=en
 # Google Search - hướng dẫn
 https://developers.google.com/search/docs/guides/
 # Google Search - data type
 https://developers.google.com/search/docs/data-types/data-type-selector
 # Google Search - checklist
 https://developers.google.com/search/docs/guides/developer-checklist
-# Search console
+# Google Search console
 https://www.google.com/webmasters/tools/home?hl=en
-# Firebase console
+# Google Firebase console
 https://console.firebase.google.com
+# Google Structured Data Markup Helper
+https://www.google.com/webmasters/markup-helper/?hl=en
+# Google My Business
+https://www.google.com/business/
+# Google Merchant
+https://merchants.google.com/Signup#
+# Google Pagespeed
+https://developers.google.com/speed/pagespeed/insights/?hl=en
+# Google Structure data testing tool
+https://search.google.com/structured-data/testing-tool
+# Google Custom Search
+https://cse.google.com/cse/create/new?hl=en&cselang=en&utm_source=wmx
+# Google Domains
+https://domains.google/
 
 # Trước khi SEO
 ## Thiết kế reponsive
