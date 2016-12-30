@@ -34,6 +34,10 @@ https://search.google.com/search-console/mobile-friendly
 
 
 # Bắt đầu SEO
+## 0.
+https://static.googleusercontent.com/media/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf
+https://support.google.com/webmasters/answer/35291?utm_source=webmasteracademy&utm_medium=web&utm_campaign=webmasteracademy
+
 ## 1.kiểm tra truy cập của Googlebot (có truy cập được không?, mã lỗi trả về là gì?, ...)
 https://www.google.com/webmasters/tools/googlebot-fetch
 
