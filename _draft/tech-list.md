@@ -12,6 +12,9 @@ https://github.com/mozilla/BrowserQuest
 https://github.com/checkstyle/checkstyle
 https://github.com/feross/standard
 
+#logging
+https://www.w3.org/TR/navigation-timing/#dom-performancetiming-domcomplete
+
 #machine learning
 https://github.com/ZuzooVn/machine-learning-for-software-engineers
 
@@ -30,4 +33,9 @@ https://github.com/jwasham/google-interview-university
 
 #test
 https://github.com/session-replay-tools/tcpcopy
+https://www.woorank.com/en/www/keeng.vn
+
+#open source projects
+https://github.com/twitter/nodes - A library to implement asynchronous dependency graphs for services in Java
+
 
