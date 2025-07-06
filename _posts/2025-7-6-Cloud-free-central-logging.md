@@ -12,15 +12,15 @@ tags:
 - DevOps
 ---
 
-## Set up
-- Create a Grafana free account at https://grafana.com/auth/sign-up/create-user
+### Set up
+- Create a [Grafana free account](https://grafana.com/auth/sign-up/create-user)
 - Create a new "Cloud access policies" at "Administration" -> "Users and access" -> "Cloud access policies" -> "Create access policy"
     + Status: Active
     + Scopes: metrics - Write, logs - Write, traces - Write
 ![Create access policy](/images/2025/07/06/2025-7-6-Cloud-free-central-logging_create-access-policy.png)    
 - Create a new token at "Administration" -> "Users and access" -> "Cloud access policies" -> "Add token" under the newly created policy above    
 
-## Test
+### Test
 - Get **URL** and **User** at "Connections" -> "Data sources" -> "grafanacloud-USERNAME-logs"
 ![Connection information](/images/2025/07/06/2025-7-6-Cloud-free-central-logging_entry-information.png)
 - The timestamp can be generated using the following script with Postman
@@ -54,4 +54,7 @@ curl --location 'https://logs-prod-020.grafana.net/loki/api/v1/push' \
 ```
 - Send a complex log
 ![Complex log Postman](/images/2025/07/06/2025-7-6-Cloud-free-central-logging_complex-message-postman.png)
+
+### View log
+View log at "Drilldown" -> "Logs"
 ![Complex log Loki](/images/2025/07/06/2025-7-6-Cloud-free-central-logging_complex-message-loki.png)
