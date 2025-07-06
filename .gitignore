@@ -1,8 +1,10 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Jekyll template
-_site/
-.sass-cache/
+_site
+.DS_Store
+.jekyll
 .jekyll-metadata
-
-
-.idea/
+.bundle
+.sass-cache
+Gemfile
+Gemfile.lock
+node_modules
+package.json
